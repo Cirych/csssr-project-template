@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="imagetoolbar" content="no">
+		<meta name="msthemecompatible" content="no">
+		<meta name="cleartype" content="on">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="google" value="notranslate">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link sizes="57x57" href="/apple-touch-icon-57x57.png" rel="apple-touch-icon">
+		<link sizes="114x114" href="/apple-touch-icon-114x114.png" rel="apple-touch-icon">
+		<link sizes="72x72" href="/apple-touch-icon-72x72.png" rel="apple-touch-icon">
+		<link sizes="144x144" href="/apple-touch-icon-144x144.png" rel="apple-touch-icon">
+		<link sizes="60x60" href="/apple-touch-icon-60x60.png" rel="apple-touch-icon">
+		<link sizes="120x120" href="/apple-touch-icon-120x120.png" rel="apple-touch-icon">
+		<link sizes="76x76" href="/apple-touch-icon-76x76.png" rel="apple-touch-icon">
+		<link sizes="152x152" href="/apple-touch-icon-152x152.png" rel="apple-touch-icon">
+		<link sizes="180x180" href="/apple-touch-icon-180x180.png" rel="apple-touch-icon">
+		<link sizes="192x192" href="/favicon-192x192.png" rel="icon" type="image/png">
+		<link sizes="160x160" href="/favicon-160x160.png" rel="icon" type="image/png">
+		<link sizes="96x96" href="/favicon-96x96.png" rel="icon" type="image/png">
+		<link sizes="16x16" href="/favicon-16x16.png" rel="icon" type="image/png">
+		<link sizes="32x32" href="/favicon-32x32.png" rel="icon" type="image/png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="application-name" content="">
+		<meta name="msapplication-tooltip" content="">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/mstile-large.png">
+		<meta name="msapplication-starturl" content="https://csssr.github.io/csssr-project-template/">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="msapplication-square70x70logo" content="/mstile-small.png">
+		<meta name="msapplication-square150x150logo" content="/mstile-medium.png">
+		<meta name="msapplication-wide310x150logo" content="/mstile-wide.png">
+		<meta name="msapplication-square310x310logo" content="/mstile-large.png">
+		<title>Anketa</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link href="/assets/styles/app.min.css?t=1469547378536" rel="stylesheet">
+	</head>
+
+	<body class="page">
+		<div class="container">
+			<header class="header">
+				<div class="header__logo">
+					<a href="#" class="header__link">
+						<img src="assets/images/logo.png" alt="CSSSR" title="CSSSR" class="header__img" />
+					</a>
+					<div class="header__text">Секретный архив учреждения</div>
+				</div>
+				<div class="header__stamp">
+					<img src="assets/images/stamp.png" alt="СЕКРЕТНО" title="СЕКРЕТНО" class="header__img" />
+				</div>
+			</header>
+			<main>
+				<div class="container-inner">
+					<header class="title">
+						<h1 class="title__text"></h1>
+						<img src="assets/images/folder.png" alt="ДЕЛО" title="ДЕЛО" class="title__img" />
+					</header>
+					<div class="info-common">
+						<ul class="info-common__list">
+							<li class="info-common__list-item">
+								<label for="name" class="info-common__label">Полное ФИО</label>
+								<span class="info-common__wrapper">
+									<input id="name" type="text" value="Иванов Иван Иванович" class="info-common__input" />
+								</span>
+							</li>
+							<li class="info-common__list-item">
+								<label for="birthdate" class="info-common__label">Год рождения</label>
+								<span class="info-common__wrapper">
+									<input id="birthdate" type="text" value="1990" class="info-common__input" />
+								</span>
+							</li>
+							<li class="info-common__list-item">
+								<label for="location" class="info-common__label">Место жительства</label>
+								<span class="info-common__wrapper">
+									<input id="location" type="text" value="г. Иваново, Россия" class="info-common__input" />
+								</span>
+							</li>
+							<li class="info-common__list-item">
+								<label for="skype" class="info-common__label">Скайп</label>
+								<span class="info-common__wrapper">
+									<input id="skype" type="text" value="ivanov" class="info-common__input" />
+								</span>
+							</li>
+							<li class="info-common__list-item">
+								<label for="email" class="info-common__label">Почта</label>
+								<span class="info-common__wrapper">
+									<input id="email" type="text" value="ivanov@gmail.com" class="info-common__input" />
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div class="info-graduate">
+						<label class="info-graduate__text">Выпускник
+							<a href="http://htmlacademy.ru">htmlacademy.ru</a>
+						</label>
+						<input id="graduate-yes" name="graduate" type="radio" checked="checked" class="info-graduate__input" />
+						<label for="graduate-yes" class="info-graduate__label">Да</label>
+						<input id="graduate-no" name="graduate" type="radio" class="info-graduate__input" />
+						<label for="graduate-no" class="info-graduate__label">Нет</label>
+					</div>
+					<div class="info-skills">
+						<label class="info-skills__title">Практические навыки</label>
+						<div class="info-skills__text">Отемтьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у
+							вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано
+							будете справляться.</div>
+						<div class="info-skills__col">
+							<ul class="info-skills__list">
+								<li class="info-skills__list-item">
+									<input id="bem" type="checkbox" checked="checked" class="info-skills__input" />
+									<label for="bem" class="info-skills__label">Методология БЭМ</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="jQuery" type="checkbox" checked="checked" class="info-skills__input" />
+									<label for="jQuery" class="info-skills__label">jQuery</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="gulp" type="checkbox" class="info-skills__input" />
+									<label for="gulp" class="info-skills__label">Использую GRUNT</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="haml" type="checkbox" class="info-skills__input" />
+									<label for="haml" class="info-skills__label">HAML</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="sass" type="checkbox" checked="checked" class="info-skills__input" />
+									<label for="sass" class="info-skills__label">SASS</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="less" type="checkbox" checked="checked" class="info-skills__input" />
+									<label for="less" class="info-skills__label">LESS</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="coffee" type="checkbox" class="info-skills__input" />
+									<label for="coffee" class="info-skills__label">CoffeeScript</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="jade" type="checkbox" checked="checked" class="info-skills__input" />
+									<label for="jade" class="info-skills__label">Jade</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="stylus" type="checkbox" checked="checked" class="info-skills__input" />
+									<label for="stylus" class="info-skills__label">Stylus</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="angular" type="checkbox" checked="checked" class="info-skills__input" />
+									<label for="angular" class="info-skills__label">Знаю (изучаю) Angular</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="android" type="checkbox" checked="checked" class="info-skills__input" />
+									<label for="android" class="info-skills__label">Верстка под Android</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="ios" type="checkbox" class="info-skills__input" />
+									<label for="ios" class="info-skills__label">Верстка под iOS</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="winphone" type="checkbox" class="info-skills__input" />
+									<label for="winphone" class="info-skills__label">Верстка под Windows Phone</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="mail" type="checkbox" class="info-skills__input" />
+									<label for="mail" class="info-skills__label">Верстка рассылок</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="responsive" type="checkbox" checked="checked" class="info-skills__input" />
+									<label for="responsive" class="info-skills__label">Адаптивная верстка</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="dropbox" type="checkbox" class="info-skills__input" />
+									<label for="dropbox" class="info-skills__label">Использую Dropbox</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="gmail" type="checkbox" checked="checked" class="info-skills__input" />
+									<label for="gmail" class="info-skills__label">Использую Gmail</label>
+								</li>
+								<li class="info-skills__list-item">
+									<input id="github" type="checkbox" checked="checked" class="info-skills__input" />
+									<label for="github" class="info-skills__label">Использую GitHub</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="info-level"></div>
+				</div>
+			</main>
+			<footer>
+				<div class="completion-date">
+					<label for="date" class="completion-date__label">Дата заполнения</label>
+					<input id="date" type="text" value="25.07.2016" class="completion-date__input" />
+				</div>
+			</footer>
+		</div>
+		<script src="/assets/scripts/app.min.js"></script>
+	</body>
+
+</html>
