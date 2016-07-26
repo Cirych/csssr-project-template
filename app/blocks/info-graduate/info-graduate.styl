@@ -1,2 +1,23 @@
 .info-graduate
-	display block
+	margin-bottom 49px
+	&__text
+		margin-right 28px
+	&__label
+		display inline-block
+		position relative
+	&__input
+		display none
+	&__input + label
+		padding-left 33px
+		margin-right 18px
+		&:before
+			content ''
+			position absolute
+			left 0
+			top -1px
+			display inline-block
+			sprite $radio_unchecked
+	&__input:checked + label
+		&:before
+			content ''
+			sprite $radio_checked

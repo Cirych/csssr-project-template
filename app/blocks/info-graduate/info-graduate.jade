@@ -1,6 +1,6 @@
 mixin info-graduate()
 	+b.info-graduate&attributes(attributes)
-		+e.label Выпускник
+		+e('label').text Выпускник
 			a(href="http://htmlacademy.ru") htmlacademy.ru
 		+e('input').input(id="graduate-yes" name="graduate" type="radio" checked)
 		+e.label(for="graduate-yes") Да
