@@ -1,3 +1,15 @@
 mixin page()
 	+b('body').page&attributes(attributes)
+		.container
+			+header
+			main
+				.container-inner
+					+b('header').title
+						+e.H1.text
+						+e.img(src="assets/images/folder.png" alt="ДЕЛО" title="ДЕЛО")
+					+info-common(getData("info-common"))
+					+info-graduate
+					+info-skills(getData("info-skills"))
+					+info-level
+			+footer
 		block

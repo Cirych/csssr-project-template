@@ -6,3 +6,29 @@ import('helpers/svg-size')
 @import 'helpers/optimize'
 
 import('../blocks/**/*')
+
+body
+    font-family $regular-font
+    color $font-color
+    background-color $bg-color
+
+.container
+	margin 0 auto
+	width 1000px
+	background url(../images/bg.png) repeat 0 -10px
+
+.container-inner
+    margin 0 auto
+    width 778px
+
+.title
+    &__img
+        display block
+        margin 28px auto
+        margin-bottom 52px
+        padding-right 40px
+
+label
+    font-family $regular-font
+    font-size 22px
+    font-weight 700

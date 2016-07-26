@@ -1,0 +1,9 @@
+mixin info-common(data)
+	+b.info-common&attributes(attributes)
+		+e.UL.list
+			each item in data
+				+e.list-item
+					+e.label(for=item.name)= item.label
+					+e('span').wrapper
+						+e('input').input(id=item.name type="text" value=item.value)
+		block

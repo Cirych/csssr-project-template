@@ -1,0 +1,9 @@
+mixin header()
+	+b('header').header&attributes(attributes)
+		+e.logo
+			+e.link(href="#")
+				+e.img(src="assets/images/logo.png" alt="CSSSR"  title="CSSSR")
+			+e.text Секретный архив учреждения
+		+e.stamp
+			+e.img(src="assets/images/stamp.png" alt="СЕКРЕТНО"  title="СЕКРЕТНО")
+		block

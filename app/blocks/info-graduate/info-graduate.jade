@@ -1,0 +1,9 @@
+mixin info-graduate()
+	+b.info-graduate&attributes(attributes)
+		+e.label Выпускник
+			a(href="http://htmlacademy.ru") htmlacademy.ru
+		+e('input').input(id="graduate-yes" name="graduate" type="radio" checked)
+		+e.label(for="graduate-yes") Да
+		+e('input').input(id="graduate-no" name="graduate" type="radio")
+		+e.label(for="graduate-no") Нет
+		block

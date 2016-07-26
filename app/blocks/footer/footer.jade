@@ -1,0 +1,6 @@
+mixin footer()
+	+b('footer')&attributes(attributes)
+		+b.completion-date
+			+e.label(for="date") Дата заполнения
+			+e('input').input(id="date" type="text" value="25.07.2016")
+		block
