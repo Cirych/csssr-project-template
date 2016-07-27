@@ -1,5 +1,5 @@
 .info-skills
-	margin-bottom 50px
+	margin-bottom 82px
 	&__title
 		margin-bottom 11px
 		display block
@@ -15,27 +15,27 @@
 			margin-right 7px
 			padding-bottom 30px
 			padding-top 9px
+	&__col
+		clearfix()
 	&__list
-		column-count 3
-		//-column-width 150px
-		column-gap 1px
+		float left
+		width 33.33%
+		&:first-child
+			label
+				padding-left 29px
+		&:last-child
+			padding-left 20px
 	&__list-item
 		padding-top 14px
-		&:nth-child(n+8):nth-child(-n+13)
-			label
-				padding-left 26px
-		&:nth-child(n+14):nth-child(-n+18)
-			label
-				padding-left 26px
 	&__label
 		display inline-block
 		position relative
 		font-size 21px
-		letter-spacing -0.1px
+		letter-spacing -0.04px
 	&__input
 		display none
 	&__input + label
-		padding-left 29px
+		padding-left 26px
 		&:before
 			content ''
 			position absolute

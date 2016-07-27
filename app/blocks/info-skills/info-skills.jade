@@ -5,7 +5,17 @@ mixin info-skills(data)
 			| Отемтьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
 		+e.col
 			+e.UL.list
-				each item in data
+				each item in data.slice(0, 7)
+					+e.list-item
+						+e('input').input(id=item.name type="checkbox" checked=item.checked)
+						+e.label(for=item.name)= item.label
+			+e.UL.list
+				each item in data.slice(7, 13)
+					+e.list-item
+						+e('input').input(id=item.name type="checkbox" checked=item.checked)
+						+e.label(for=item.name)= item.label
+			+e.UL.list
+				each item in data.slice(13, 18)
 					+e.list-item
 						+e('input').input(id=item.name type="checkbox" checked=item.checked)
 						+e.label(for=item.name)= item.label

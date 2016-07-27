@@ -11,16 +11,16 @@ casper.test.begin( 'Compare tests', function ( test ) {
 		onTimeout: function timeoutCallback(){},
 		onComplete: function completeCallback(){},
 		//hideElements: '#thing.selector',
-		//addLabelToFailedImage: true,
-		/*outputSettings: {
+		addLabelToFailedImage: false,
+		outputSettings: {
 			errorColor: {
 				red: 255,
-				green: 255,
-				blue: 0
+				green: 0,
+				blue: 255
 			},
-			errorType: 'movement',
+			errorType: 'movementDifferenceIntensity',
 			transparency: 0.3
-		}*/
+		}
 	} );
 
 	casper.on( 'remote.message', function ( msg ) {
