@@ -1,4 +1,6 @@
 mixin info-level()
 	+b.info-level&attributes(attributes)
 		+e('label').title Уровень владения JavaScript
+		+e('input').input(id="level" name="level" type="range")
+		+e.label(for="level") Да
 		block
