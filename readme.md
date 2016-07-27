@@ -6,6 +6,7 @@ View dist on [GitHub](https://cirych.github.io/csssr-project-template/)
 Base image for PixelPerfect [image](https://github.com/Cirych/csssr-project-template/raw/anketa/compare/screenshots/baseimage_0.png)
 
 [PhantomCSS](https://github.com/Huddle/PhantomCSS) used to take diffs. (in progress!!!)
+example diff [image](https://github.com/Cirych/csssr-project-template/raw/anketa/compare/failures/baseimage_0.fail)
 
 ### Start server
 ```

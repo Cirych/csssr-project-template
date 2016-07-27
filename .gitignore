@@ -45,4 +45,5 @@ npm-debug.log
 
 # compare
 compare/results/
-compare/failures/
+compare/failures/*
+!compare/failures/baseimage_0.fail.png
