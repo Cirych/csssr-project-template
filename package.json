@@ -32,7 +32,9 @@
     "zip": "gulp zip",
     "patch": "gulp patch",
     "minor": "gulp minor",
-    "major": "gulp major"
+    "major": "gulp major",
+    "compare": "gulp compare",
+    "psd": "gulp psd_to_png"
   },
   "repository": {
     "type": "git",
@@ -81,6 +83,7 @@
     "gulp-jade": "^1.1.0",
     "gulp-jade-inheritance": "^0.5.3",
     "gulp-jsbeautifier": "^1.0.1",
+	"gulp-phantomcss": "^0.2.0",
     "gulp-plumber": "^1.0.1",
     "gulp-plumber-error-handler": "^1.0.0",
     "gulp-pug-lint": "^0.1.6",
@@ -100,6 +103,7 @@
     "node-notifier": "^4.3.1",
     "npm-install-webpack-plugin": "^2.0.2",
     "npm-run-all": "^1.5.1",
+	"psd": "^3.1.0",
     "pug-lint": "^2.2.2",
     "require-dir": "^0.3.0",
     "rimraf": "^2.5.0",
