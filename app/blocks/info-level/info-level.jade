@@ -2,6 +2,8 @@ mixin info-level(data)
 	+b.info-level&attributes(attributes)
 		+e('label').title Уровень владения JavaScript
 		+b.slider
-			each item, index in data
-				+e.label(style=index===data.length-1?'right: '+0:'left: '+item.level+'%')= item.label
+			+e.knob
+			+e.wrapper
+				each item, index in data
+					+e.label(style=index===data.length-1?'right: '+0:'left: '+item.level+'%')= item.label
 		block

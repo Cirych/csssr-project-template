@@ -6,6 +6,12 @@
 		top 17px
 		sprite $line
 		margin-left 8px
+		&__knob
+			position absolute
+			sprite $knob
+			top 10px
+			left 20%
+			margin-left -6px
 		&__label
 			position absolute
 			font-size 13px
@@ -18,7 +24,7 @@
 				content ''
 				position absolute
 				sprite $devider_short
-				top -29px
+				top -30px
 				left -4px
 			&:first-child
 				margin-left 4px
@@ -27,8 +33,10 @@
 					left -6px
 			&:last-child
 				margin-right -5px
+				margin-top 7px
 				&:before
 					left initial
+					top -38px
 					right -8px
 					sprite $devider_long
 				
