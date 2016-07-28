@@ -1,6 +1,7 @@
-mixin info-level()
+mixin info-level(data)
 	+b.info-level&attributes(attributes)
 		+e('label').title Уровень владения JavaScript
-		+e('input').input(id="level" name="level" type="range")
-		+e.label(for="level") Да
+		+b.slider
+			each item, index in data
+				+e.label(style=index===data.length-1?'right: '+0:'left: '+item.level+'%')= item.label
 		block
