@@ -43,7 +43,7 @@
 		<title>Anketa</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
-		<link href="assets/styles/app.min.css?t=1469719587096" rel="stylesheet">
+		<link href="assets/styles/app.min.css?t=1469900998143" rel="stylesheet">
 	</head>
 
 	<body class="page">
@@ -197,18 +197,21 @@
 					<div class="info-level">
 						<label class="info-level__title">Уровень владения JavaScript</label>
 						<div class="slider">
-							<div style="left: 0%" class="slider__label">Не владею</div>
-							<div style="left: 20%" class="slider__label">Использую готовые решения</div>
-							<div style="left: 50%" class="slider__label">Использую готовые решения и умею их переделывать</div>
-							<div style="right: 0" class="slider__label">Пишу сложные скрипты</div>
+							<div class="slider__knob"></div>
+							<div class="slider__wrapper">
+								<div style="left: 0%" data-value='0' class="slider__label">Не владею</div>
+								<div style="left: 20%" data-value='20' class="slider__label">Использую готовые решения</div>
+								<div style="left: 50%" data-value='50' class="slider__label">Использую готовые решения и умею их переделывать</div>
+								<div style="right: 0" data-value='100' class="slider__label">Пишу сложные скрипты</div>
+							</div>
 						</div>
 					</div>
-					<footer>
+					<div class="footer">
 						<div class="completion-date">
-							<label for="date" class="completion-date__label">Дата заполнения</label>
-							<input id="date" type="text" value="25.07.2016" class="completion-date__input" />
+							<label for="date" class="completion-date__label">Дата заполенения</label>
+							<input id="date" type="text" value="01.01.2014" class="completion-date__input" />
 						</div>
-					</footer>
+					</div>
 				</div>
 			</main>
 		</div>
