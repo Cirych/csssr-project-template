@@ -4,6 +4,6 @@ mixin info-level(data)
 		+b.slider
 			+e.knob
 			+e.wrapper
-				each item, index in data
-					+e.label(style=index===data.length-1?'right: '+0:'left: '+item.level+'%')= item.label
+				each item, index in data.sort((a,b)=>a.level-b.level)
+					+e.label(style=index===data.length-1?'right: '+0:'left: '+item.level+'%' data-value=item.level)= item.label
 		block
